@@ -11,11 +11,10 @@
 
     let menu = [
         { path: "", name: "Home" },
-        { path: "#hero", name: "부천셔츠룸" },
-        { path: "#a1", name: "가격안내" },
-        { path: "#a2", name: "셔츠룸이란" },
-        { path: "#a3", name: "오시는길" },
-        { path: "#a4", name: "게시판" },
+        { path: "#intro", name: "부천노래방" },
+        { path: "#price", name: "가격안내" },
+        { path: "#map", name: "오시는길" },
+        { path: "#board", name: "게시판" },
     ];
 
     function toggleMenu() {
@@ -29,7 +28,6 @@
     }
 
     function scroll() {
-        console.log("ddjio", scrollY, scrollY_copy);
         scrollY <= scrollY_copy ? (nav_active = true) : (nav_active = false);
         scrollY_copy = scrollY;
     }

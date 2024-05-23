@@ -34,22 +34,10 @@
         scrollY_copy = scrollY;
     }
 
-    function kakaoConnect() {
-        Kakao.Channel.chat({
-            channelPublicId: 'kr.-' // 실제 카카오톡 채널 ID로 교체
-        });
-    }
-
     onMount(() => {
         toggleNav();
     });
 </script>
-
-<svelte:head>
-    <script async src="https://developers.kakao.com/sdk/js/kakao.min.js">
-        Kakao.init('04c04caee42a64e443c9e993ed528cef')
-    </script>
-</svelte:head>
 
 <svelte:window bind:scrollY on:scroll={scroll} />
 
@@ -118,11 +106,11 @@
                     class="block px-4 py-3 mb-3 text-xs text-center font-semibold bg-green-500 hover:bg-green-600 rounded-xl"
                     href="tel:01066866686">전화하기</a
                 >
-                <button
-                    class="block w-full px-4 py-3 mb-2 text-xs text-center text-white font-semibold bg-yellow-500 hover:bg-yellow-600 rounded-xl"
-                    on:click={kakaoConnect}>
+                <a
+                    href="https://open.kakao.com/o/sG6uugtg"
+                    class="block w-full px-4 py-3 mb-2 text-xs text-center text-white font-semibold bg-yellow-500 hover:bg-yellow-600 rounded-xl">
                     카카오톡
-                </button>
+                </a>
             </div>
             <p class="my-4 text-xs text-center text-gray-400">
                 <span>Designed by </span>

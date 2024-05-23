@@ -133,7 +133,7 @@
         pointer-events: auto;
     }
     .nav {
-        top: -25px;
+        top: -68px;
     }
     .nav_active {
         background-color: rgba(0, 0, 0, 1);
